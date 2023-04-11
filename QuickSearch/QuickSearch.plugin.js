@@ -5,8 +5,8 @@
  * @version 0.0.1
  * @description Adds a Google Search to the Message Options Bar
  * @website https://naystie.com/
- * @source https://github.com/Naystie/BD-QuickSearch
- * @updateUrl https://raw.githubusercontent.com/Naystie/BD-QuickSearch/main/QuickSearch.plugin.js
+ * @source https://github.com/Naystie/BD-NaysPlugins
+ * @updateUrl https://raw.githubusercontent.com/Naystie/BD-NaysPlugins/main/QuickSearch/QuickSearch.plugin.js
  */
 
 module.exports = (_ => {
