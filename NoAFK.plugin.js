@@ -2,7 +2,7 @@
  * @name NoAFK
  * @author Naystie
  * @authorId 344871509677965313
- * @version 0.0.2
+ * @version 0.0.3
  * @description Stops Discord from setting your presence to idle.
  * @website https://naystie.com
  * @source https://github.com/Naystie/BD-NaysPlugins
@@ -20,7 +20,7 @@ module.exports = (() => {
           github_username: "Naystie",
         },
       ],
-      version: "0.0.2",
+      version: "0.0.3",
       description:
         "Stops Discord from setting your presence to idle. ",
       github: "https://github.com/Naystie/BD-NaysPlugins",
@@ -148,7 +148,6 @@ module.exports = (() => {
             this.saveSettings.bind(this),
             new Switch(
               "No AFK",
-              "Stops Discord from setting your presence to idle.",
               this.settings["noAFK"],
               (e) => {
                 this.settings["noAFK"] = e;
