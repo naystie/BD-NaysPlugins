@@ -2,7 +2,7 @@
  * @name NoAFK
  * @author Naystie
  * @authorId 344871509677965313
- * @version 0.0.3
+ * @version 0.0.4
  * @description Stops Discord from setting your presence to idle.
  * @website https://naystie.com
  * @source https://github.com/Naystie/BD-NaysPlugins
@@ -20,7 +20,7 @@ module.exports = (() => {
           github_username: "Naystie",
         },
       ],
-      version: "0.0.3",
+      version: "0.0.4",
       description:
         "Stops Discord from setting your presence to idle. ",
       github: "https://github.com/Naystie/BD-NaysPlugins",
@@ -133,32 +133,12 @@ module.exports = (() => {
           this.checkForUpdates();
           this.initialize();
         }
-        initialize() {
-          if (this.settings["noAFK"]) this.noIdle();      
-        }
         noIdle() {
           Patcher.instead(CurrentUserIdle, "getIdleSince", () => null);
           Patcher.instead(CurrentUserIdle, "isIdle", () => false);
           Patcher.instead(CurrentUserIdle, "isAFK", () => false);
         }
         onStop() {
-        }
-        getSettingsPanel() {
-          return SettingPanel.build(
-            this.saveSettings.bind(this),
-            new Switch(
-              "No AFK",
-              this.settings["noAFK"],
-              (e) => {
-                this.settings["noAFK"] = e;
-              }
-            )
-          );
-        }
-        saveSettings() {
-          Utilities.saveData(config.info.name, "settings", this.settings);
-          this.stop();
-          this.initialize();
         }
       };
     })(ZLibrary.buildPlugin(config));
