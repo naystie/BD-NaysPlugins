@@ -2,11 +2,11 @@
  * @name NoAFK
  * @author Naystie
  * @authorId 344871509677965313
- * @version 0.0.4
+ * @version 0.0.5
  * @description Stops Discord from setting your presence to idle.
  * @website https://naystie.com
  * @source https://github.com/Naystie/BD-NaysPlugins
- * @updateUrl https://raw.githubusercontent.com/Naystie/BD-NaysPlugins/main/NoAFK.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Naystie/BD-NaysPlugins/main/NoAFK/NoAFK.plugin.js
  */
 
 module.exports = (() => {
@@ -20,12 +20,12 @@ module.exports = (() => {
           github_username: "Naystie",
         },
       ],
-      version: "0.0.4",
+      version: "0.0.5",
       description:
         "Stops Discord from setting your presence to idle. ",
       github: "https://github.com/Naystie/BD-NaysPlugins",
       github_raw:
-        "https://raw.githubusercontent.com/Naystie/BD-NaysPlugins/main/NoAFK.plugin.js",
+        "https://raw.githubusercontent.com/Naystie/BD-NaysPlugins/main/NoAFK/NoAFK.plugin.js",
     },
     main: "NoAFK.plugin.js",
   };
