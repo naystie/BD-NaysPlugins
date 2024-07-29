@@ -1,9 +1,10 @@
 /**
- * @name StereoSound
- * @version 0.0.8
- * @author naystie
+ * @name StereoPlus
+ * @version 0.1.0
+ * @author Naystie
+ * @authorId 344871509677965313
  * @authorLink https://github.com/naystie
- * @source https://raw.githubusercontent.com/naystie/bd-addons/main/plugins/StereoSound.plugin.js
+ * @source https://github.com/naystie/NaysPlugins/blob/main/StereoPlus.plugin.js
  */
 
 /*@cc_on
@@ -34,17 +35,17 @@ module.exports = (() => {
     const config = {
         "main": "index.js",
         "info": {
-            "name": "StereoSound",
+            "name": "StereoPlus",
             "authors": [{
-                "name": "naystie",
-                "discord_id": "147077474222604288",
+                "name": "Naystie",
+                "discord_id": "344871509677965313",
                 "github_username": "naystie"
             }],
             "authorLink": "https://github.com/naystie",
-            "version": "0.0.8",
+            "version": "0.1.0",
             "description": "Adds stereo sound to your own microphone's output. Requires a capable stereo microphone.",
-            "github": "https://github.com/naystie/bd-addons",
-            "github_raw": "https://raw.githubusercontent.com/naystie/bd-addons/main/plugins/StereoSound.plugin.js"
+            "github": "https://github.com/naystie/BD-NaysPlugins",
+            "github_raw": "https://raw.githubusercontent.com/naystie/NaysPlugins/main/StereoPlus.plugin.js"
         },
         "changelog": [{
             "title": "Changes",
@@ -177,4 +178,3 @@ module.exports = (() => {
 })();
 
 /*@end@*/
-
